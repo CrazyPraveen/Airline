@@ -4,9 +4,10 @@ import { PredictiveModel } from "@/components/dashboard/PredictiveModel";
 import { ResourceDashboard } from "@/components/dashboard/ResourceDashboard";
 import { FinancialImpact } from "@/components/dashboard/FinancialImpact";
 import { RealTimeOverview } from "@/components/dashboard/RealTimeOverview";
+import { CsvDataTables } from "@/components/dashboard/CsvDataTables";
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { LayoutDashboard, BrainCircuit, BarChart3, Activity, Home as HomeIcon } from "lucide-react";
+import { LayoutDashboard, BrainCircuit, BarChart3, Activity, Home as HomeIcon, Table2 } from "lucide-react";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("overview");
@@ -23,6 +24,7 @@ export default function Home() {
     { id: "resource", label: "Resource Hub", icon: LayoutDashboard },
     { id: "financial", label: "Impact Analysis", icon: BarChart3 },
     { id: "telemetry", label: "Live Telemetry", icon: Activity },
+    { id: "csv", label: "CSV Tables", icon: Table2 },
   ];
 
   return (
@@ -79,6 +81,7 @@ export default function Home() {
             {activeTab === "resource" && <ResourceDashboard />}
             {activeTab === "financial" && <FinancialImpact />}
             {activeTab === "telemetry" && <RealTimeOverview />}
+            {activeTab === "csv" && <CsvDataTables />}
           </motion.div>
         </AnimatePresence>
       </main>
