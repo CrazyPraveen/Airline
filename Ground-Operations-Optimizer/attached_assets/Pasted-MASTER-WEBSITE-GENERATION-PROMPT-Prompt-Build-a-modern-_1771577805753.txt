@@ -1,0 +1,176 @@
+MASTER WEBSITE GENERATION PROMPT
+Prompt:
+Build a modern, high-performance, fully responsive React website (using React + Tailwind CSS + Framer Motion animations) for an aviation operations intelligence system called:
+✈️ "IndiGround AI – Smart Turnaround Intelligence System"
+The platform solves turnaround time (TAT) delays at high-traffic airports.
+🎯 Core Objective
+Airlines lose $65 per minute (~₹5,400) for every delay.
+The system must:
+Predict Actual Turnaround Time before landing.
+Detect potential delay risks.
+Recommend which ground resource to prioritize:
+🧳 Baggage
+⛽ Fuel
+🍽 Catering
+Minimize total financial penalty across active gates.
+💎 UI / UX REQUIREMENTS (Very Important)
+Create a premium competition-level interface with:
+Glassmorphism cards
+Gradient backgrounds (dark aviation theme – navy, indigo, neon blue accents)
+Smooth page transitions
+Framer Motion animations
+Animated charts
+Floating subtle background aviation graphics
+Clean dashboard layout
+Micro-interactions on hover
+Animated counters for financial loss
+Responsive mobile + tablet + desktop layout
+Use:
+Tailwind CSS
+Framer Motion
+Recharts (for graphs)
+Lucide icons
+Modern dashboard layout
+🖥️ Website Structure
+1️⃣ Landing Page (Animated Hero Section)
+Hero section with:
+Title:
+“Transforming Analog Ground Operations into AI-Powered Precision”
+Subtitle:
+Reduce Turnaround Delays. Minimize Financial Penalties. Optimize Resources in Real Time.
+Include:
+Animated airplane landing illustration
+Animated statistics counter:
+Avg Delay Cost Today
+Active Flights
+Predicted Delays
+Call-to-action button:
+"Launch Control Dashboard"
+Smooth scroll transition to dashboard.
+2️⃣ Predictive TAT Model Section
+Interactive prediction panel:
+Inputs:
+Aircraft Type (Dropdown)
+Arrival Delay (minutes)
+Baggage Availability (%)
+Fuel Truck Availability (%)
+Catering Readiness (%)
+On clicking Predict TAT:
+Display:
+Predicted Turnaround Time
+Risk Level (Low / Medium / High)
+Estimated Financial Impact
+Delay Probability %
+Animate results with scaling + glow effect.
+3️⃣ Dynamic Resource Dashboard
+This is the MAIN highlight section.
+Create a control tower-style dashboard with:
+Top Metrics Bar:
+Active Flights
+Flights at Risk
+Total Delay Minutes
+Estimated Financial Loss (Animated counter)
+Gate View Panel:
+Show cards for multiple gates:
+Gate A1
+Flight ID
+Aircraft Type
+Predicted TAT
+Delay Risk Indicator (Color-coded)
+Resource Bottleneck Detected
+Example:
+⚠️ Catering Delay Risk
+⛽ Fuel Stable
+🧳 Baggage Moderate
+AI Recommendation Panel (Must Look Smart)
+If delay predicted:
+Show dynamic recommendation:
+Example:
+"Prioritize Catering Crew for Flight 6E-482 at Gate A1.
+Estimated savings: $1,950"
+Include:
+Highlight animation
+Pulsing alert card
+Visual comparison:
+If Baggage prioritized → Loss X
+If Fuel prioritized → Loss Y
+Recommended → Minimum Loss
+4️⃣ Financial Impact Simulation Section
+Interactive slider:
+“Simulate Delay (minutes)”
+As slider increases:
+Show real-time financial loss animation
+Graph updating dynamically
+Show cascading impact visualization
+Add animated line chart:
+Delay vs Financial Cost
+5️⃣ Real-Time Operations Overview
+Include:
+Live status timeline (animated progress bars)
+Resource utilization bars
+Turnaround breakdown pie chart:
+Baggage %
+Fuel %
+Catering %
+Boarding %
+🧠 Predictive Model Logic (Frontend Mock Logic)
+Simulate prediction logic:
+Predicted_TAT =
+Base_TAT (by aircraft type)
+(Arrival_Delay × 0.8)
+Resource Delay Factor
+If:
+Arrival Delay > 15 AND Catering < 60%
+→ High Risk
+System should dynamically recommend:
+Resource with highest marginal delay contribution.
+🎨 Design Style Guidelines
+Theme:
+Dark aviation theme with neon highlights.
+Colors:
+Background: Deep navy gradient
+Accent: Electric blue / Cyan
+Warning: Amber
+Critical: Red glow
+Success: Green glow
+Effects:
+Glass blur cards
+Smooth hover lift
+Subtle shadow depth
+Animated loading skeletons
+Smooth scroll navigation
+⚡ Technical Requirements
+React functional components
+Hooks-based state management
+Fully responsive grid layout
+Reusable components
+Animated transitions between sections
+Modular structure
+Clean code
+Well-structured folders
+🏆 Make It Competition-Winning
+The website must:
+Feel like an airport control tower system
+Look enterprise-grade
+Feel intelligent and futuristic
+Clearly show financial impact
+Make judges instantly understand value
+Be visually impressive within 5 seconds
+Add:
+Animated intro loader with airplane animation
+Smooth transitions between sections
+Subtle background radar animation
+💥 Extra Bonus Section (To Impress Judges)
+Add:
+“AI Insights Panel”
+Show insights like:
+“Catering delays contribute 38% of total TAT variance.”
+“Evening flights show 22% higher delay probability.”
+“Fuel operations stable across last 10 flights.”
+📱 Responsiveness
+Must:
+Collapse dashboard into stacked layout on mobile
+Touch-friendly inputs
+Smooth performance on all devices
+✈️ Final Output Must Feel Like:
+A startup-level AI SaaS platform used by major airlines.
