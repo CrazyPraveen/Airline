@@ -215,10 +215,10 @@ export function PredictiveModel() {
               </div>
 
               <div className="space-y-3">
-                <Label>Aircraft Type</Label>
+                <Label>Airline</Label>
                 <Select value={formData.aircraftType} onValueChange={(val) => setFormData({ ...formData, aircraftType: val })}>
                   <SelectTrigger className="bg-background/50 border-white/10 text-white">
-                    <SelectValue placeholder="Select Aircraft" />
+                    <SelectValue placeholder="Select Airline" />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="A320">Airbus A320 (Narrow-body)</SelectItem>

@@ -10,7 +10,7 @@ const ACTIVE_FLIGHTS = [
   {
     id: "6E-482",
     gate: "A1",
-    aircraft: "A320",
+    airline: "IndiGo",
     predictedTat: 75,
     baseTat: 45,
     risk: "High",
@@ -22,7 +22,7 @@ const ACTIVE_FLIGHTS = [
   {
     id: "UK-911",
     gate: "B4",
-    aircraft: "B777",
+    airline: "Vistara",
     predictedTat: 65,
     baseTat: 60,
     risk: "Low",
@@ -34,7 +34,7 @@ const ACTIVE_FLIGHTS = [
   {
     id: "AI-101",
     gate: "C2",
-    aircraft: "A350",
+    airline: "Air India",
     predictedTat: 82,
     baseTat: 60,
     risk: "Medium",
@@ -46,7 +46,7 @@ const ACTIVE_FLIGHTS = [
   {
     id: "QP-221",
     gate: "A5",
-    aircraft: "B737",
+    airline: "Akasa Air",
     predictedTat: 55,
     baseTat: 45,
     risk: "Medium",
@@ -145,7 +145,7 @@ export function ResourceDashboard() {
                           {flight.id}
                         </Badge>
                       </div>
-                      <span className="text-sm text-muted-foreground">{flight.aircraft}</span>
+                      <span className="text-sm text-muted-foreground">{flight.airline}</span>
                     </div>
                     
                     <div className="text-right">
@@ -201,7 +201,7 @@ export function ResourceDashboard() {
                       <CardTitle className="text-lg">Gate {selectedFlight.gate} Actions</CardTitle>
                       {selectedFlight.risk === 'High' && <Badge variant="destructive" className="animate-pulse">Critical</Badge>}
                     </div>
-                    <CardDescription>Flight {selectedFlight.id} • {selectedFlight.aircraft}</CardDescription>
+                    <CardDescription>Flight {selectedFlight.id} • {selectedFlight.airline}</CardDescription>
                   </CardHeader>
                   
                   <CardContent className="pt-6 space-y-6">
